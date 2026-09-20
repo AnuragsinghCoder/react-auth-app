@@ -1,16 +1,88 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Auth – Authentication & User Management System
 
-Currently, two official plugins are available:
+A full-stack authentication and user management application built using React.js, Node.js, Express.js, and MongoDB.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* User registration and login
+* JWT-based authentication
+* Password hashing with bcrypt
+* Protected routes
+* User CRUD operations
+* RESTful APIs
+* MongoDB Atlas integration
+* Responsive React UI
+* Production deployment with Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* JavaScript
+* Tailwind CSS
+* React Router
+
+### Backend
+
+* Node.js
+* Express.js
+* Mongoose
+* JWT
+* bcrypt
+* CORS
+
+### Database
+
+* MongoDB
+* MongoDB Atlas
+
+### Deployment
+
+* Vercel
+
+## Project Architecture
+
+```text
+React Frontend
+      ↓
+REST API
+      ↓
+Express.js
+      ↓
+Controllers / Routes
+      ↓
+Mongoose
+      ↓
+MongoDB Atlas
+```
+
+## Main API Routes
+
+```text
+/auth
+/users
+/users/ping
+/users/user
+/users/user/:_id
+```
+
+## User Operations
+
+The application supports:
+
+* Create user
+* Get all users
+* Get user by ID
+* Update user
+* Delete user
+
+## Deployment
+
+The backend is deployed on Vercel and uses MongoDB Atlas as the production database.
+
+## Purpose
+
+This project was built to practice and demonstrate full-stack development, REST API design, authentication, database integration, and production deployment.
